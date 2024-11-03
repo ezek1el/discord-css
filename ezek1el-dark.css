@@ -38,7 +38,6 @@ button[aria-label="Gift a Nitro Subscription"] {
 }
 
 
-
 /* Hide the Sticker button */
 button[aria-label*="Sticker"],
 [class*="sticker" i],
@@ -46,43 +45,7 @@ button[aria-label="Open Stickers Picker"] {
     display: none !important;
 }
 
-/* Hide additional elements if they still persist */
-[class*="discover" i],
-[class*="explore" i],
-[class*="discovery" i] {
-    display: none !important;
-}
 
-/* Hide any button that contains "Server Discovery" text */
-button:contains("Server Discovery") {
-    display: none !important;
-}
-
-/* Hide any animation layers related to decorations */
-[class*="decoration" i],
-[class*="animation" i],
-[class*="halloween" i],
-[class*="effect" i] {
-    display: none !important;
-    animation: none !important;
-    transition: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    filter: none !important;
-    transform: none !important;
-    position: fixed !important;
-    top: -9999px !important;
-    left: -9999px !important;
-    animation-play-state: paused !important;
-}
-
-/* Globally stop all animations on the page and set them to paused */
-* {
-    animation: none !important;
-    transition: none !important;
-    animation-play-state: paused !important;
-    transition-property: none !important;
-}
 #--------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------
