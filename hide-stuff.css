@@ -1,0 +1,36 @@
+/* hide discover button */
+.footer_aa1bff {
+display: none;
+}
+/* Hide Nitro gift button, language dependent*/
+button[aria-label="Send a gift"] {
+    display: none;
+}
+button[aria-label="Ein Geschenk senden"] {
+    display: none;
+}
+
+/*  gif selector  */
+button[aria-label="GIF-Auswahl öffnen"] {
+    display: none;
+}
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+
+/*  sticker, translate, applauncher  */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+button[aria-label="Stickerauswahl öffnen"] {
+    display: none;
+}
+button[aria-label="Open Translate Modal"] {
+    display: none;
+}
+button[aria-label="Stickerauswahl öffnen"] {
+    display: none;
+}
+[class*="channelAppLauncher_"] {
+  display: none !important;
+}
