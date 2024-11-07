@@ -1,57 +1,18 @@
-/* Enhanced CSS to Hide Discover, Gift, and Sticker buttons in Discord */
+/**
+ * @name midnight (nord)
+ * @description A dark, rounded discord theme. Based on nord theme (https://github.com/nordtheme/nord).
+ * @author refact0r, anubis
+ * @version 1.6.2
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/flavors/midnight-nord.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
 
-/* Hide the Discover button (targeting multiple possible classes and elements) */
-button[aria-label*="Discover"],
-button[aria-label*="Explore"],
-button[aria-label*="Public Servers"],
-div[data-list-item-id*="guild-discovery"],
-[class*="guildDiscovery" i],
-div[class*="sidebar"] a[href*="/guild-discovery"],
-button[aria-label="Explore Public Servers"],
-[class*="discover" i],
-[class*="explore" i],
-[class*="discovery" i] {
-    display: none !important;
-}
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
-/* Completely hide the Gift button and remove animations */
-button[aria-label*="Gift"],
-[class*="gift" i],
-button[aria-label="Gift a Nitro Subscription"] {
-    display: none !important;
-    pointer-events: none !important;
-    animation: none !important;
-    transform: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    position: fixed !important;
-    top: -9999px !important;
-    left: -9999px !important;
-    transition: none !important;
-    will-change: auto !important;
-    background: none !important;
-    filter: none !important;
-    animation-play-state: paused !important;
-}
-
-
-/* Hide the Sticker button */
-button[aria-label*="Sticker"],
-[class*="sticker" i],
-button[aria-label="Open Stickers Picker"] {
-    display: none !important;
-}
-
-
-#--------------------------------------------------------------------------------------------------------------------------------
-#--------------------------------------------------------------------------------------------------------------------------------
-#--------------------------------------------------------------------------------------------------------------------------------
-#--------------------------------------------------------------------------------------------------------------------------------
-#--------------------------------------------------------------------------------------------------------------------------------
-
+#@import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -67,14 +28,14 @@ button[aria-label="Open Stickers Picker"] {
 	--divider-thickness: 3px;
 
 	/* color of status indicators and window controls */
-	--online-indicator: var(--accent-2); /* change to #23a55a for default green */
-	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f23f43 for default red */
-	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
-	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
+	--online-indicator: #23a55a; /* change to #23a55a for default green */
+	--dnd-indicator: ##f23f43; /* change to #f23f43 for default red */
+	--idle-indicator: #f0b232; /* change to #f0b232 for default yellow */
+	--streaming-indicator: #593695; /* change to #593695 for default purple */
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
-	--accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
+	--accent-2: #f23f43; /* general unread/mention elements */
 	--accent-3: hsl(190, 70%, 42%); /* accent buttons */
 	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
 	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
@@ -1318,21 +1279,6 @@ html.theme-light,
 	--white-500: var(--text-1);
 }
 
-/**
- * @name midnight (nord)
- * @description A dark, rounded discord theme. Based on nord theme (https://github.com/nordtheme/nord).
- * @author refact0r, anubis
- * @version 1.6.2
- * @invite nz87hXyvcy
- * @website https://github.com/refact0r/midnight-discord
- * @source https://github.com/refact0r/midnight-discord/blob/master/flavors/midnight-nord.theme.css
- * @authorId 508863359777505290
- * @authorLink https://www.refact0r.dev
-*/
-
-/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
-
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
 /* customize things here */
 :root {
@@ -1346,27 +1292,27 @@ html.theme-light,
 	--divider-thickness: 3px;
 
 	/* color of status indicators and window controls */
-	--online-indicator: #4eb76a; /* change to #23a55a for default green */
-	--dnd-indicator: hsl(0, 46%, 46%); /* change to #f23f43 for default red */
-	--idle-indicator: #b68f3f; /* change to #f0b232 for default yellow */
-	--streaming-indicator: #b378a8; /* change to #593695 for default purple */
+	--online-indicator: #b6fd78; /* change to #23a55a for default green */
+	--dnd-indicator: #e85261b0; /* change to #f23f43 for default red */
+	--idle-indicator: #ffee00d9; /* change to #f0b232 for default yellow */
+	--streaming-indicator: #b48ead; /* change to #593695 for default purple */
 
 	/* accent colors */
 	--accent-1: hsl(179, 25%, 65%); /* links */
-	--accent-2: hsl(0, 95%, 64%); /* general unread/mention elements */
-	--accent-3: hsla(203, 43%, 67%, 0.589); /* accent buttons */
-	--accent-4: hsla(193, 37%, 60%, 0.514); /* accent buttons when hovered */
+	--accent-2: hsl(193, 43%, 67%); /* general unread/mention elements */
+	--accent-3: hsl(193, 43%, 67%); /* accent buttons */
+	--accent-4: hsl(193, 37%, 60%); /* accent buttons when hovered */
 	--accent-5: hsl(193, 31%, 53%); /* accent buttons when clicked */
-	--mention: hsla(184, 23%, 36%, 0.274); /* mentions & mention messages */
+	--mention: hsla(193, 43%, 51%, 0.1); /* mentions & mention messages */
 	--mention-hover: hsla(193, 43%, 51%, 0.05); /* mentions & mention messages when hovered */
 
 	/* text colors */
-	--text-0: #ffffff; /* text on colored elements */
+	--text-0: #2e3440; /* text on colored elements */
 	--text-1: #eceff4; /* other normally white text */
 	--text-2: #e5e9f0; /* headings and important text */
 	--text-3: #eceff4; /* normal text */
-	--text-4: #9eb7bbbc; /* icon buttons and channels */
-	--text-5: hsl(216, 23%, 71%); /* muted channels/chats and timestamps */
+	--text-4: #93a4c2; /* icon buttons and channels */
+	--text-5: #5d6983; /* muted channels/chats and timestamps */
 
 	/* background and dark colors */
 	--bg-1: #434c5e; /* dark buttons when clicked */
@@ -1408,4 +1354,3 @@ html.theme-light,
 	--green-to-accent-3-filter: none; /* add friend page explore icon */
 	--blurple-to-accent-3-filter: none; /* add friend page school icon */
 }
-
