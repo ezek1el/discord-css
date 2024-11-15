@@ -1299,7 +1299,7 @@ html.theme-light,
 
 	/* accent colors */
 	--accent-1: hsl(179, 25%, 65%); /* links */
-	--accent-2: hsl(193, 43%, 67%); /* general unread/mention elements */
+	--accent-2: hsl(0, 84%, 45%); /* general unread/mention elements */
 	--accent-3: hsl(193, 43%, 67%); /* accent buttons */
 	--accent-4: hsl(193, 37%, 60%); /* accent buttons when hovered */
 	--accent-5: hsl(193, 31%, 53%); /* accent buttons when clicked */
@@ -1307,7 +1307,7 @@ html.theme-light,
 	--mention-hover: hsla(193, 43%, 51%, 0.05); /* mentions & mention messages when hovered */
 
 	/* text colors */
-	--text-0: #2e3440; /* text on colored elements */
+	--text-0: #ffffff; /* text on colored elements */
 	--text-1: #eceff4; /* other normally white text */
 	--text-2: #e5e9f0; /* headings and important text */
 	--text-3: #eceff4; /* normal text */
