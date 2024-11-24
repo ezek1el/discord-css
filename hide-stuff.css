@@ -25,9 +25,6 @@ button[aria-label="Open sticker picker"] {
 button[aria-label="Stickerauswahl öffnen"] {
     display: none;
 }
-button[aria-label="Open Translate Modal"] {
-    display: none;
-}
 button[aria-label="Stickerauswahl öffnen"] {
     display: none;
 }
