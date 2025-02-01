@@ -1,5 +1,5 @@
 /* hide discover button */
-.footer__214dc {
+div[class*="footer_"]:has([aria-label="Discover"]) {
 display: none;
 }
 /* Hide Nitro gift button, language dependent*/
