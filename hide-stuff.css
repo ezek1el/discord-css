@@ -1,5 +1,5 @@
 /* Public server thing, new, always visible BS. */
-div[class*="footer_"]:has([aria-label="Discover"]) {
+.footer_ef3116 {
 display: none;
 }
 /* Hide Nitro gift button, language dependent*/
