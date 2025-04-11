@@ -1,7 +1,6 @@
 /* Public server thing, new, always visible BS. */
-div[class*="footer_"]:has(> div > div[class*="listItemWrapper_"])
-{
-    display:none;
+div[class*="footer_"]:has([aria-label="Discover"]) {
+display: none;
 }
 /* Hide Nitro gift button, language dependent*/
 button[aria-label="Send a gift"] {
